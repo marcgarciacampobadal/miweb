@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi CV - MARC GARCÍA CAMPOBADAL</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">Quién soy</a></li>
+        <li><a href="#search">Qué soy y qué busco</a></li>
+        <li><a href="#expe">Formación y Experiencia</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#portfolio">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h1>¡Hola! Soy Marc</h1>
+      <p>Un desarrollador Full stack y técnico en ciberseguridad que busca crear soluciones innovadoras en el mundo digital.<br>
+      Especializado en <strong>desarrollo web</strong> y tecnologías como <em>JavaScript, Python y React</em>. Actualmente estoy profundizando en Ciberseguridad y Machine learning.</p>
+      <img src="marc.jpg" alt="Mi foto" class="foto-perfil">
+      <button onclick="document.getElementById('cvDownload').click()">📄 Descargar CV</button>
+      <a id="cvDownload" href="cv_marc.pdf" download style="display:none;">📄 Descargar CV</a>
+    </section>
+
+    <!-- Qué soy y qué busco -->
+    <section id="search" class="section section-with-image">
+      <div class="content">
+        <h1>QUÉ SOY Y QUÉ BUSCO</h1>
+        <ul>
+          <li>Me apasiona viajar, aprender de otros lugares y ver el mundo desde distintas perspectivas. Por eso, busco un trabajo que me ofrezca flexibilidad.</li>
+          <li>Me encanta resolver problemas complejos y trabajar en equipo para encontrar soluciones innovadoras.</li>
+          <li>Apuesto por el desarrollo personal y, como no, por el profesional. Me considero persistente y comprometido, siempre buscando sumar valor a cada proyecto.</li>
+          <li>Además, mi interés por la ciberseguridad y el machine learning crece cada día, con el objetivo de crear soluciones que protejan mejor a las personas y sus datos.</li>
+        </ul>
+      </div>
+      <img src="mapa.jpg" alt="Imagen de fondo" class="background-image">
+    </section>
+
+    <section id="expe" class="section">
+      <h2>Formación y Experiencia</h2>
+      <p>Certificación CCST Cibersecurity</p>
+      <p>Ciclo Formativo de Grado Superior (CFGS) en Desarrollo de Aplicaciones Web</p>
+      <p>Grado en Criminologia, especialidades en: Ciberdelincuencia y Seguridad y prevención</p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Desarrollo Frontend</h3>
+          <p>HTML, CSS y Javascript (React)</p>
+        </div>
+        <div class="skill">
+          <h3>Python</h3>
+          <p>Desarrollo ágil, análisis de datos y automatización de tareas.</p>
+        </div>
+        <div class="skill">
+          <h3>Java</h3>
+          <p>Arquitectura empresarial y desarrollo multiplataforma.</p>
+        </div>
+        <div class="skill">
+          <h3>C#</h3>
+          <p>Aplicaciones robustas en .NET y diseño orientado a objetos.</p>
+        </div>
+        <div class="skill">
+          <h3>Ciberseguridad</h3>
+          <p>Hacking ético e informática forense.</p>
+        </div>
+        <div class="skill">
+          <h3>IA</h3>
+          <p>Aprendizaje automático (ML) y visión artificial.</p>
+        </div>
+        <div class="skill">
+          <h3>C++</h3>
+          <p>Programación de alto rendimiento y desarrollo de sistemas complejos.</p>
+        </div>
+        <div class="skill">
+          <h3>SQL</h3>
+          <p>Gestión y optimización de bases de datos relacionales.</p>
+        </div>
+      </div>
+    </section>
+
+  <section id="portfolio" class="section">
+  <h1>Proyectos</h1>
+  <div class="slider-container">
+    <div class="slider">
+      <div class="project active">
+        <img src="gestortareas.jpg" alt="Proyecto 1">
+        <p>Gestor de tareas (CRUD: Python y Flask + SQLite)</p>
+      </div>
+      <div class="project">
+        <img src="generador.png" alt="Proyecto 2">
+        <p>Generador aleatorio de contraseñas (Python)</p>
+      </div>
+      <div class="project">
+        <img src="notes.png" alt="Proyecto 3">
+        <p>Aplicación de notas (CRUD: PHP + MySQL)</p>
+      </div>
+      <div class="project">
+        <img src="users.jpeg" alt="Proyecto 4">
+        <p>Gestor de sesiones de usuario seguras (PHP + MySQL)</p>
+      </div>
+      <div class="project">
+        <img src="divisas.jpeg" alt="Proyecto 5">
+        <p>Conversor de divisas (PHP + APIs externas)</p>
+      </div>
+    </div>
+    </div>
+	<div class="buttons-container">
+      <button class="carousel-btn left-btn"> < </button>
+      <button class="carousel-btn right-btn"> > </button>
+  </div>
+</section>
+    <section id="contact" class="section">
+      <h2>Contacto</h2>
+      <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MARC GARCÍA CAMPOBADAL. Todos los derechos reservados.</p>
+    <a href="https://wa.me/34616576191" target="_blank" class="whatsapp-icon">
+      <img src="wsp.webp" alt="WhatsApp" />
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
