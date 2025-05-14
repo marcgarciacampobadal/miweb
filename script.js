@@ -30,3 +30,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
   showSlide(currentIndex);  // Inicializa el slider
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+  const message = document.getElementById("formMessage");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = form.getAttribute("action");
+
+    fetch(action, {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          form.reset();
+          message.style.display = "block";
+        } else {
+          alert("Ocurrió un error. Por favor, inténtalo más tarde.");
+        }
+      })
+      .catch((error) => {
+        alert("Error al enviar. Intenta más tarde.");
+      });
+  });
+});
