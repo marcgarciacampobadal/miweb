@@ -442,3 +442,29 @@ p {
   line-height: 1.6;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añadir sombra al texto */
 }
+/* ================================
+   Formación y Experiencia
+   Texto alineado a la izquierda, títulos centrados
+   ================================ */
+
+#expe p,
+#expe ul,
+#expe li {
+  text-align: left;  /* Solo el texto debajo de los títulos */
+}
+
+/* Mejora visual tipo CV para listas */
+#expe ul {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+#expe li {
+  margin-bottom: 0.6rem;
+}
+/* Color para los h3 y strong dentro de #expe */
+#expe h3,
+#expe strong {
+  color: #4fa3e3;
+}
+
