@@ -467,4 +467,17 @@ p {
 #expe strong {
   color: #4fa3e3;
 }
+/* Desplazar el contenido (no títulos) al 25% desde la izquierda */
+#expe p,
+#expe ul {
+  margin-left: 25%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+/* Ajuste de las listas para que los puntos se muevan también */
+#expe ul {
+  padding-left: 1.2rem; /* controla la distancia texto ↔ puntito */
+}
+
 
